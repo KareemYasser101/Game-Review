@@ -1,0 +1,111 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+
+.cursive-font {
+    font-family: cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #272b30;
+    color: #fff;
+}
+
+/* ****************games start**************** */
+.games img {
+    max-height: 30vh;
+}
+.games nav {
+    background-color: rgb(58, 73, 123) !important;
+    margin: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+.nav-item a {
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+}
+.nav-item a:hover {
+    color: #09c;
+}
+.nav-link:focus {
+    color: white;
+}
+
+.nav-item .nav-link.active {
+    color: #09c;
+}
+
+/* ****************games end**************** */
+
+/* ****************content start**************** */
+.card {
+    background-color: #272B30;
+    color: white;
+    font-size: 12px;
+    filter: grayscale(0.7);
+    transition: all .5s;
+}
+.card:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.card .fees {
+    background-color: #0D6EFD;
+    padding: 3px 10px;
+}
+.card .game-type {
+    background-color: #32383E;
+    padding: 3px;
+}
+.card .platform {
+    background-color: #32383E;
+    padding: 3px;
+}
+/* ****************content end**************** */
+
+/* loading screen */
+.lds-dual-ring {
+    /* change color here */
+    color: #ffc004;
+    background-color: #272b30ad;
+    z-index: 99999;
+}
+.lds-dual-ring,
+.lds-dual-ring:after {
+    box-sizing: border-box;
+}
+.lds-dual-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6.4px solid currentColor;
+    border-color: currentColor transparent currentColor transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
